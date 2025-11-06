@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      // Simpan URL asli yang diakses user
+      sessionStorage.redirect = location.pathname + location.search + location.hash;
+      // Redirect ke index.html
+      location.replace(location.origin + "/index.html");
+    </script>
+  </head>
+  <body></body>
+</html>
